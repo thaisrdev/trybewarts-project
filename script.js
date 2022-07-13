@@ -11,3 +11,16 @@ function verificacao() {
 }
 
 botaoLogin.addEventListener('click', verificacao);
+
+const checkBox = document.getElementById('agreement');
+const submitBtn = document.getElementById('submit-btn');
+
+function concordo () {
+  if (checkBox.checked) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+}
+
+checkBox.addEventListener('click', concordo);
