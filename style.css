@@ -27,6 +27,7 @@
 
 main {
   display: flex;
+  justify-content: center;
 }
 
 #trybewarts-forms-logo {
@@ -36,4 +37,9 @@ main {
 #label-family {
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }

@@ -24,3 +24,15 @@ function concordo() {
 }
 
 checkBox.addEventListener('click', concordo);
+
+const texto = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+
+function contar (event) {
+  let caracteres = this.value.length;
+  let restantes = 500 - caracteres;
+
+  counter.innerHTML = restantes;
+}
+
+texto.addEventListener('keyup', contar)
